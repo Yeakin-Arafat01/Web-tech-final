@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(#547fab);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #007BFF;
+    outline: none;
+    background-color: #eef7ff;
+}
+
+.radio-group {
+    margin-top: 5px;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+.food-items {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.food-items label {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.food-items label:hover {
+    background: #d6eaff;
+    border-color: #007BFF;
+}
+
+.food-items input {
+    margin-right: 8px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    display: block;
+    margin-top: 3px;
+}
+
+/* Hidden until order is placed */
+#result {
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    background: #e8f5e9;
+    border-left: 5px;
+    border-radius: 8px;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .food-items {
+        grid-template-columns: 1fr;
+    }
+}
